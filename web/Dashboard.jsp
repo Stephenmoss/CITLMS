@@ -104,7 +104,7 @@
 			<hr>
 		<ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#students">Students</a></li>
-    <li><a data-toggle="tab" href="#lplan">Lesson Plans</a></li>
+    <li><a data-toggle="tab" href="#lplans">Lesson Plans</a></li>
     <li><a data-toggle="tab" href="#lessons">Lessons</a></li>
   </ul>
  
@@ -274,8 +274,11 @@
 </div><!--/.container-->
 
 <footer>
-  <p class="pull-right">©2014 CIT LMS</p>
+  <p class="pull-right">?2014 CIT LMS</p>
 </footer>
-		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
