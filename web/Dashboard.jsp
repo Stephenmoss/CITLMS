@@ -26,7 +26,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Logout</a></li>
+            <li><a href="index.jsp">Logout</a></li>
             <div class="UNLogin"><p>Username</p></div>
           </ul>
         </div>
@@ -43,8 +43,8 @@
                 <div><p> </p></div>
                   <div><p>|</p></div>
               <li class="active"><a href="#">Overview</a></li>
-              <li><a href="#">Create Student</a></li>
-              <li><a href="#">Create Lesson Plan</a></li>
+              <li><a href="CStudent.jsp">Create Student</a></li>
+              <li><a href="CLessPlan.jsp">Create Lesson Plan</a></li>
               <li><a href="#">Create Lesson</a></li>
             </ul>
             <ul class="nav nav-sidebar">
@@ -102,6 +102,17 @@
           </div>
 		
 			<hr>
+                        <div>
+                            <div>
+                                <H4>Inbox:</H4>
+                                <div class="col-xs-12">
+                                    Message from Teacher in Room 121.
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <hr>
 		<ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#students">Students</a></li>
     <li><a data-toggle="tab" href="#lplans">Lesson Plans</a></li>
