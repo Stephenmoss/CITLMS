@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Moss LMS</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+            <title>Moss LMS</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+                <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="../css/styles.css" rel="stylesheet">
+    </head>
 	<body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.jsp">Logout</a></li>
-            <div class="UNLogin"><p>Username</p></div>
-          </ul>
-        </div>
-      </div>
-</nav>
+            <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-<div class="container-fluid">
-      
-      <div class="row row-offcanvas row-offcanvas-left">
-        
-         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
-           
-            <ul class="nav nav-sidebar">
-                <div><p> </p></div>
-                  <div><p>|</p></div>
-              <li class="active"><a href="#">Overview</a></li>
-              <li><a href="CStudent.jsp">Create Student</a></li>
-              <li><a href="CLessPlan.jsp">Create Lesson Plan</a></li>
-              <li><a href="#">Create Lesson</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="">Move Student</a></li>
-              <li><a href="">Assess Student</a></li>
-              <li><a href="">Generate Report</a></li>
-            </ul>           
-          
-        </div><!--/span-->
-        
-        <div class="col-sm-9 col-md-10 main">
-          
-          <!--toggle sidebar button-->
-          <p class="visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
-          </p>
-          
-			<div class="row">
-				<div class="col-xs-12">
-					
-				</div> 
-			</div>
-			
-			<hr>
-			<h2 class="sub-header">Info Box 1</h2>
-			<div class="row">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        
+                        <div class="col-md-2">
+                        <img class="img-responsive" id="logo" src="../img/LMSlogo.jpg">
+                        </div>
+                            <div class="col-md-8">
+                        <img class="img-responsive" id="banner" src="../img/LMSbanner.jpg">
+                        </div>
+                            
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="col-md-2">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="LogoutServlet">Logout</a></li>
+                        <li><p><%=session.getAttribute("FirstName")%>
+                               <%=session.getAttribute("LastName")%></p></li>
+                        <li><p><%=session.getAttribute("Role")%></p></li>
+                        
+                      </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <ul class="nav nav-sidebar">
+                        <div><p> </p></div>
+                        <div><p>|</p></div>
+                        <li class="active"><a href="#">Overview</a></li>
+                        <li><a href="wiz/CStudent.jsp">Create Student</a></li>
+                        <li><a href="wiz/CLessPlan.jsp">Create Lesson Plan</a></li>
+                        <li><a href="#">Create Lesson</a></li>
+                    </ul>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="">Move Student</a></li>
+                        <li><a href="">Assess Student</a></li>
+                        <li><a href="">Generate Report</a></li>
+                    </ul>           
+                </div><!--/span-->
+                <div class="col-sm-9 col-md-10 main">
+                <!--toggle sidebar button-->
+                <p class="visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                </p>
+            <div class="row">
+                <div class="col-xs-12">
+		</div>			
+            </div>	
+        <hr>
+        <h2 class="sub-header">Info Box 1</h2>
+        <div class="row">
             <div class="col-xs-6">
               <div>
 				<h4>Name: <span class="text-muted">Test Name</span></h4>

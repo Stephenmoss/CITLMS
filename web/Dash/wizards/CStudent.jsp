@@ -10,10 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Student</title>
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <link href="css/addStudentCss.css" rel="stylesheet">
+        <script src="../../js/jquery-2.1.4.min.js"></script>
+        <link href="../../css/addStudentCss.css" rel="stylesheet">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-        <script type="text/javascript" src="js/formToWizard.js"></script>
+        <script type="text/javascript" src="../../js/formToWizard.js"></script>
         <script type="text/javascript">
         $(document).ready(function(){
             $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' })
@@ -28,12 +28,13 @@
             </div>
             
             <form id="SignupForm" action="">
+                <div>
                     <fieldset>
                         <legend>Basic Student Information</legend>
                         <label for="Name">Student Name</label>
                         <input id="Name" type="text">
                         <label for="Species"></label>
-                        <select id="Species">
+                        <select id="Grade">
                           <option value="Select">Grade Level</option>
                           <option value="K">K</option>
                           <option value="1">1</option>
@@ -49,8 +50,9 @@
                           <option value="11">11</option>
                           <option value="12">12</option>
                         </select>
-                        <label for="Age">Student Age</label>
+                        <label for="Age">Student Birthday</label>
                         <input id="Age" type="text">
+                        <a href="../index.jsp" class="cancel">Cancel</a>
                     </fieldset>
                     <fieldset>
                         <legend>Student Address</legend>
@@ -64,6 +66,7 @@
                         <input id="State" type="text">
                         <label for="zip">Zipcode</label>
                         <input id="zip" type="text">
+                        <a href="../index.jsp" class="cancel">Cancel</a>
                     </fieldset>
                     <fieldset>
                         <legend>Contact Information</legend>
@@ -73,8 +76,10 @@
                         <input id="Phone2" type="text">
                         <label for="Phone3">Emergency contact</label>
                         <input id="Phone2" type="text">
+                        <a href="../index.jsp" class="cancel">Cancel</a>
+                        <a href="../studentBoard.jsp" class="submit">Submit</a>
                     </fieldset>
-
+                </div>
             </form>    
         </div>
     </body>

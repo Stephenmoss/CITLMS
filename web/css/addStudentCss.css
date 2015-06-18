@@ -8,36 +8,123 @@ and open the template in the editor.
     Author     : smoss
 */
 
-body { font-family:Lucida Sans, Arial, Helvetica, Sans-Serif; font-size:13px; margin:20px;}
+body { 
+    font-family:Lucida Sans, Arial, Helvetica, Sans-Serif; 
+    font-size:13px; 
+    margin:20px;
+}
         
-#main { width:960px; margin: 0px auto; border:solid 1px #b2b3b5; -moz-border-radius:10px; padding:20px; background-color:#f6f6f6;}
+#main { 
+    width:960px; 
+    margin: 0px auto; 
+    border:solid 1px #b2b3b5; 
+    -moz-border-radius:10px; 
+    padding:20px; 
+    background-color:#f6f6f6;
+}
         
-#header { text-align:center; border-bottom:solid 1px #b2b3b5; margin: 0 0 20px 0; }
+#header { 
+    text-align:center; 
+    border-bottom:solid 1px #b2b3b5; 
+    margin: 0 0 20px 0; 
+}
         
-fieldset { border:none; width:320px;}
+fieldset { 
+    border:none; 
+    width:320px;
+}
         
-legend { font-size:18px; margin:0px; padding:10px 0px; color: #006BB6; font-weight:bold;}
+legend { 
+    font-size:18px; 
+    margin:0px; 
+    padding:10px 0px; 
+    color: #006BB6; 
+    font-weight:bold;
+}
         
-label { display:block; margin:15px 0 5px;}
+label { 
+    display:block; 
+    margin:15px 0 5px;
+}
         
-input[type=text], input[type=password] { width:300px; padding:5px; border:solid 1px #000;}
+input[type=text], input[type=password] { 
+    width:300px; 
+    padding:5px; 
+    border:solid 1px #000;
+}
         
-.prev, .next { background-color:#006BB6; padding:5px 10px; color:#fff; text-decoration:none;}
+.prev, .next, .cancel, .cancelMid, .submit { 
+    background-color:#006BB6; 
+    padding:5px 10px; 
+    color:#fff; 
+    text-decoration:none;
+    transition: .5s ease;
+}
         
-.prev:hover, .next:hover { background-color:#000; text-decoration:none;}
+.prev:hover, .next:hover, .cancel:hover, .cancelMid:hover, .submit:hover { 
+    background-color:#000; 
+    text-decoration:none;
+}
         
-.prev { float:left;}
+.prev { 
+    float:left;
+}
         
-.next { float:right;}
+.next { 
+    float:right;
+}
+
+.cancel {
+    margin-top:13px;
+    float: left;
+}
+
+.cancelMid {
+    margin-top:13px;
+    margin-right: 68px;
+    float: left;
+}
+
+.submit {
+    margin-top: 13px;
+    float:right;
+}
         
-#steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+#steps { 
+    list-style:none; 
+    width:100%; 
+    overflow:hidden; 
+    margin:0px; 
+    padding:0px;
+}
         
-#steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+#steps li {
+    font-size:24px; 
+    float:left; 
+    padding:10px; 
+    color:#b0b1b3;
+}
         
-#steps li span {font-size:11px; display:block;}
+#steps li span {
+    font-size:11px; 
+    display:block;
+}
         
-#steps li.current { color:#000;}
+#steps li.current { 
+    color:#000;
+}
         
-#makeWizard { background-color:#b0232a; color:#fff; padding:5px 10px; text-decoration:none; font-size:18px;}
+#makeWizard { 
+    background-color:#b0232a; 
+    color:#fff; 
+    padding:5px 10px; 
+    text-decoration:none; 
+    font-size:18px;
+}
         
-#makeWizard:hover { background-color:#000;}
+#makeWizard:hover { 
+    background-color:#000;
+}
+
+
+

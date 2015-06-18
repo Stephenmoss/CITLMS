@@ -14,22 +14,22 @@
     </head>
 <body>
     <div>
-        <img src="LMSlogo.jpg" height="150" width="150">
-        <img src="LMSbanner.jpg" height="150" width="900">
+        <img src="img/LMSlogo.jpg" height="150" width="150">
+        <img src="img/LMSbanner.jpg" height="150" width="900">
     </div>
     <div class="container">
         <div id="login-form">
-                <form action="Dashboard.jsp" method="link" data-init-psswrd>
+                <form action="LoginServlet" method="post" data-init-psswrd>
                     <h3>Please enter your Username and Password</h3>
                     <label>
                     Username:
-                    <input type="text" required>
+                    <input type="text" required name="userID">
                     </label>
                     <label>
                     Password:
-                    <input type="password" data-psswrd-toggle required>
+                    <input type="password" data-psswrd-toggle name="password" required>
                     </label>
-                    <button type="submit" a href="Dashboard.jsp">
+                    <button type="submit" value="Login">
                         Submit
                     </button>
                 </form>
