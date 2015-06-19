@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-            <title>Moss LMS</title>
-        <meta name="generator" content="Bootply" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-                <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link href="../css/styles.css" rel="stylesheet">
-    </head>
-	<body>
-            <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Moss LMS</title>
 
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        
-                        <div class="col-md-2">
-                        <img class="img-responsive" id="logo" src="../img/LMSlogo.jpg">
-                        </div>
-                            <div class="col-md-8">
-                        <img class="img-responsive" id="banner" src="../img/LMSbanner.jpg">
-                        </div>
-                            
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    <a class="navbar-brand" href="#"></a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <div class="col-md-2">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="LogoutServlet">Logout</a></li>
-                        <li><p><%=session.getAttribute("FirstName")%>
-                               <%=session.getAttribute("LastName")%></p></li>
-                        <li><p><%=session.getAttribute("Role")%></p></li>
-                        
-                      </ul>
-                        </div>
-                    </div>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/w3full.css" rel="stylesheet" >
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div class="col-md-2">
+                <img class="img-responsive" id="logo" src="../img/LMSlogo.jpg">
                 </div>
-            </header>
+                    <div class="col-md-8">
+                <img class="img-responsive" id="banner" src="../img/LMSbanner.jpg">
+                </div>
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <div class="col-md-2">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../LogoutServlet">Logout</a></li>
+                <li>
+                    <p>
+                       <%=session.getAttribute("FirstName")%>
+                       <%=session.getAttribute("LastName")%>
+                       <%=session.getAttribute("Role")%>
+                    </p>
+                </li>
+              </ul>
+                </div>
+            </div>
+        </div>
+    </header>
         <div class="container-fluid">
             <div class="row row-offcanvas row-offcanvas-left">
                 <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">

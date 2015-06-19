@@ -5,48 +5,51 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Moss LMS</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Catalyst Vet Services</title>
-    <link rel="stylesheet" href="../css/w3full.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/metisMenu.min.css" rel="stylesheet">
-    <link href="../css/sb-admin-2.css" rel="stylesheet">
-    <link href="../css/morris.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/utilities.js"></script>
-    <script src="../js/morris-data.js"></script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <body>
-<div id="wrapper">
-<header role="banner" class="navbar navbar-fixed-top blue-catalyst txt-white">
-          <div class="container blue-catalyst txt-white">
-        <div class="navbar-header blue-catalyst">
-          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left txt-white">
-              <span class="fa fa-bars"></span>
-          </button>
-            <div class="navbar-brand navbar-brand-centered txt-white">Catalyst Vet Services</div>
-            
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/styles.css" rel="stylesheet">
+<link href="../css/w3full.css" rel="stylesheet" >
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div class="col-md-2">
+                <img class="img-responsive" id="logo" src="../img/LMSlogo.jpg">
+                </div>
+                    <div class="col-md-8">
+                <img class="img-responsive" id="banner" src="../img/LMSbanner.jpg">
+                </div>
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <div class="col-md-2">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../LogoutServlet">Logout</a></li>
+                <li><p><%=session.getAttribute("FirstName")%>.
+                       <%=session.getAttribute("LastName")%></p></li>
+                <li><p><%=session.getAttribute("Role")%></p></li>
+
+              </ul>
+                </div>
+            </div>
         </div>
-              <ul class="nav navbar-nav navbar-right blue-catalyst">
-                <li><a href="../LogoutServlet" class="w3-medium txt-white">Logout</a></li>
-            </ul>
-        <div class="side-collapse in">
-          <nav role="navigation" class="navbar-collapse blue-catalyst txt-white">
-            
-          </nav>
-        </div>
-          </div></header>
+    </header>
             <!-- /.navbar-header -->
  
       <div class="row">
@@ -56,7 +59,7 @@
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Pet dashboard</a>
+                            <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i>Student dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bolt fa-fw"></i>Pet Wizards<span class="fa arrow"></span></a>
@@ -151,7 +154,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg">
-                    <h1 class="page-header">Petboard</h1>
+                    <h1 class="page-header">#NAME# board</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
