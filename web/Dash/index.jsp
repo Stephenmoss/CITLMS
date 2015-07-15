@@ -5,7 +5,6 @@
 
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/styles.css" rel="stylesheet">
-<link href="../css/w3full.css" rel="stylesheet" >
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
 
 <body>
@@ -34,7 +33,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="../LogoutServlet">Logout</a></li>
                 <li>
-                    <p>
+                    <p class="topBar">
                        <%=session.getAttribute("FirstName")%>
                        <%=session.getAttribute("LastName")%>
                        <%=session.getAttribute("Role")%>
@@ -53,12 +52,12 @@
                         <div><p>|</p></div>
                         <li class="active"><a href="#">Overview</a></li>
                         <li><a href="wiz/CStudent.jsp">Create Student</a></li>
-                        <li><a href="wiz/CLessPlan.jsp">Create Lesson Plan</a></li>
-                        <li><a href="#">Create Lesson</a></li>
+                        <li><a href="wiz/CLessPlan.jsp">Create Lesson</a></li>
+                        <li><a href="#">Assess Student</a></li>
                     </ul>
                     <ul class="nav nav-sidebar">
                         <li><a href="">Move Student</a></li>
-                        <li><a href="">Assess Student</a></li>
+                        <li><a href="">Create Lesson Plan</a></li>
                         <li><a href="">Generate Report</a></li>
                     </ul>           
                 </div><!--/span-->

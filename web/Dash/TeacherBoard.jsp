@@ -59,31 +59,40 @@
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i>Student dashboard</a>
+                            <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i>Teachername Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bolt fa-fw"></i>Pet Wizards<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bolt fa-fw"></i><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">PLACEHOLDER WIZ</a>
+                                    <a href="flot.html">Create Lesson Plan</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">PLACEHOLDER WIZ</a>
+                                    <a href="morris.html">Create Lesson</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Add Student</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Actions<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html">PLACEHOLDER ACTION</a>
+                                    <a href="panels-wells.html">Deactivate</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html">PLACEHOLDER ACTION</a>
+                                    <a href="buttons.html">Suggest move</a>
                                 </li>
                                 <li>
-                                    <a href="notifications.html">PLACEHOLDER ACTION</a>
+                                    <a href="notifications.html">Create Report</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Create IDP</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Change Password</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

@@ -248,3 +248,7 @@ img {
 txt-white {
     color: #fff !important;
 }
+
+.topBar {
+    color: white !important;
+}
